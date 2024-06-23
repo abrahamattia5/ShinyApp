@@ -1,17 +1,25 @@
+// src/app/(tabs)/index.tsx
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { useRouter } from 'expo-router';
 import Header from '@/components/Header/Header';
 
-const HomeScreen = () => 
+const HomeScreen: React.FC = () => 
 {
+  const router = useRouter();
+
+  const handlePress = () => {
+    router.push('/survey');
+  };
+
   return (
     <View style={styles.container}>
-
       <Header />
-
       <View style={styles.mainContent}>
-        <Text style={styles.mainText}>Repérez vos besoins, on s’occupe du reste, avec les meilleurs talents</Text>
-        <TouchableOpacity style={styles.mainButton}>
+        <Text style={styles.mainText}>
+          Repérez vos besoins, on s’occupe du reste, avec les meilleurs talents
+        </Text>
+        <TouchableOpacity style={styles.mainButton} onPress={handlePress}>
           <Text style={styles.mainButtonText}>Faire le test</Text>
         </TouchableOpacity>
       </View>
