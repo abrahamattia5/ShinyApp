@@ -1,12 +1,17 @@
 // src/app/(tabs)/result.tsx
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { useLocalSearchParams } from 'expo-router';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import Header from '@/components/Header/Header';
 
 const ResultScreen: React.FC = () => {
   const { answers } = useLocalSearchParams();
   const parsedAnswers = JSON.parse(answers as string) as { [key: number]: string };
+  const router = useRouter();
+
+  const handleShowProfiles = () => {
+    router.push('/profils');
+  };
 
   return (
     <View style={styles.container}>
@@ -19,6 +24,9 @@ const ResultScreen: React.FC = () => {
             <Text style={styles.answerText}>{parsedAnswers[parseInt(key)]}</Text>
           </View>
         ))}
+        <TouchableOpacity style={styles.profilesButton} onPress={handleShowProfiles}>
+          <Text style={styles.profilesButtonText}>Afficher les prestataires</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
@@ -51,6 +59,17 @@ const styles = StyleSheet.create({
   },
   answerText: {
     fontSize: 16,
+  },
+  profilesButton: {
+    backgroundColor: '#6200ea',
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 5,
+    marginTop: 20,
+  },
+  profilesButtonText: {
+    color: '#fff',
+    fontSize: 18,
   },
 });
 
