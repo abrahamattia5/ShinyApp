@@ -17,7 +17,7 @@ const Header = () =>
           <Link style={styles.navItem} href="/profils">Profils</Link>
         </TouchableOpacity>
         <TouchableOpacity style={styles.navButton}>
-          <Link style={styles.navButtonText} href="/about">Faire le test</Link>
+          <Link style={styles.navButtonText} href="/survey">Faire le test</Link>
         </TouchableOpacity>
       </View>
     </View>
