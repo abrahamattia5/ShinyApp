@@ -13,11 +13,18 @@ interface Profile
 
 const profiles: Profile[] = 
 [
-  { name: 'Julien Brun', role: 'Développeur mobile', image: require('../assets/images/profile.png') },
-  { name: 'Arielle Gautier', role: 'Développeuse fullstack', image: require('../assets/images/profile.png') },
-  { name: 'Marine Carpentier', role: 'Développeuse frontend', image: require('../assets/images/profile.png') },
-  { name: 'Lucille Barre', role: 'Product Designer', image: require('../assets/images/profile.png') },
-];
+    { name: 'Julien Brun', role: 'Développeur mobile', image: require('../assets/images/1.jpeg') },
+    { name: 'Arielle Gautier', role: 'Développeuse fullstack', image: require('../assets/images/2.jpeg') },
+    { name: 'Marine Carpentier', role: 'Développeuse frontend', image: require('../assets/images/3.jpeg') },
+    { name: 'Lucille Barre', role: 'Product Designer', image: require('../assets/images/4.jpeg') },
+    { name: 'Clément Rolland', role: 'Développeur mobile', image: require('../assets/images/5.jpeg') },
+    { name: 'Grégoire Chevalier', role: 'Développeur backend', image: require('../assets/images/6.jpeg') },
+    { name: 'Raphaël Rodriguez', role: 'Designer', image: require('../assets/images/7.jpeg') },
+    { name: 'Hugo Vysa', role: 'Développeur frontend', image: require('../assets/images/8.jpeg') },
+    { name: 'Mina Toman', role: 'Développeuse Mobile', image: require('../assets/images/11.jpeg') },
+    { name: 'Amélie Leroy', role: 'Développeuse backend', image: require('../assets/images/12.jpeg') },
+    { name: 'Maxime Lebrun', role: 'Intégrateur SEO', image: require('../assets/images/9.jpeg') },
+  ];
 
 const ProfilsScreen: React.FC = () => (
   <ScrollView contentContainerStyle={styles.container}>
