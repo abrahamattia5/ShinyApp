@@ -2,7 +2,22 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+project pictures link : https://drive.google.com/drive/folders/1MRrW3rFVJTAY9sf5_uNZhc2E8PF8G1Ak
+
 ## Get started
+
+Étapes d'installation : 
+
+Clonez ce dépôt sur votre machine locale :
+ ```bash
+git clone https://github.com/abrahamattia5/ShinyApp.git
+```
+Accédez au répertoire du projet :
+
+   ```bash
+cd nom-de-votre-repo
+   ```
+
 
 1. Install dependencies
 
