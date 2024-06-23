@@ -6,13 +6,14 @@ project pictures link : https://drive.google.com/drive/folders/1MRrW3rFVJTAY9sf5
 
 ## Get started
 
-Étapes d'installation : 
+Installation steps: 
 
-Clonez ce dépôt sur votre machine locale :
+
+Clone this repository to your local machine:
  ```bash
 git clone https://github.com/abrahamattia5/ShinyApp.git
 ```
-Accédez au répertoire du projet :
+Navigate to the project directory:
 
    ```bash
 cd nom-de-votre-repo
